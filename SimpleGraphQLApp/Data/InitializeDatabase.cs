@@ -24,7 +24,7 @@ namespace SimpleGraphQLApp.Data
                     Course = course,
                     Student = new Student
                     {
-                        FirstMidName = "Bashar",
+                        FirstName = "Bashar",
                         LastName = "Ovi"
                     }
                 });
@@ -33,7 +33,7 @@ namespace SimpleGraphQLApp.Data
                     Course = course,
                     Student = new Student 
                     { 
-                        FirstMidName = "Sujit",
+                        FirstName = "Sujit",
                         LastName = "Biswash"
                     }
                 });
@@ -42,7 +42,7 @@ namespace SimpleGraphQLApp.Data
                     Course = course,
                     Student = new Student 
                     { 
-                        FirstMidName = "Akash", 
+                        FirstName = "Akash", 
                         LastName = "Abir"
                     }
                 });

@@ -39,10 +39,11 @@ namespace SimpleGraphQLApp
             app.UseRouting();
 
             app.UseGraphQL();
+            app.UsePlayground();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGet("/", async context =>
+                endpoints.MapGet("/playground", async context =>
                 {
                     await context.Response.WriteAsync("Hello World!");
                 });
