@@ -1,3 +1,4 @@
+using HotChocolate;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -5,6 +6,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SimpleGraphQLApp.Data;
+using HotChocolate;
+using HotChocolate.Execution.Configuration;
+using HotChocolate.AspNetCore;
 
 namespace SimpleGraphQLApp
 {
@@ -15,6 +19,12 @@ namespace SimpleGraphQLApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlite("Data Source = GraphQLAppDB"));
+
+            services.AddGraphQL(
+                SchemaBuilder.New()
+            .AddQueryType<Query>()
+            .Create(),
+        new QueryExecutionOptions { ForceSerialExecution = true });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -28,6 +38,8 @@ namespace SimpleGraphQLApp
             }
 
             app.UseRouting();
+
+            app.UseGraphQL();
 
             app.UseEndpoints(endpoints =>
             {
