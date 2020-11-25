@@ -39,6 +39,7 @@ namespace simple_graphql_app
             app.UseRouting();
 
             app.UseGraphQL();
+            app.UsePlayground();
 
             app.UseEndpoints(endpoints =>
             {

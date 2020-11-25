@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="HotChocolate.AspNetCore" Version="10.4.0" />
+    <PackageReference Include="HotChocolate.AspNetCore.Playground" Version="10.5.5" />
     <PackageReference Include="HotChocolate.Types.Selections" Version="10.4.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.10" />
