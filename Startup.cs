@@ -43,7 +43,7 @@ namespace simple_graphql_app
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGet("/playground", async context =>
+                endpoints.MapGet("/", async context =>
                 {
                     await context.Response.WriteAsync("Hello World!");
                 });

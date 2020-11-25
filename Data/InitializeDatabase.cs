@@ -1,8 +1,8 @@
-﻿using SimpleGraphQLApp.Models;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using simple_graphql_app.Models;
 
-namespace SimpleGraphQLApp.Data
+namespace simple_graphql_app.Data
 {
     public static class InitializeDatabase
     {
