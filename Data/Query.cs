@@ -1,9 +1,9 @@
 ﻿using System.Linq;
 using HotChocolate;
 using HotChocolate.Types;
-using SimpleGraphQLApp.Models;
+using simple_graphql_app.Models;
 
-namespace SimpleGraphQLApp.Data
+namespace simple_graphql_app.Data
 {
     public class Query
     {

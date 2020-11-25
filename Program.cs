@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace SimpleGraphQLApp
+namespace simple_graphql_app
 {
     public class Program
     {

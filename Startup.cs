@@ -5,11 +5,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using SimpleGraphQLApp.Data;
 using HotChocolate.Execution.Configuration;
 using HotChocolate.AspNetCore;
+using simple_graphql_app.Data;
 
-namespace SimpleGraphQLApp
+namespace simple_graphql_app
 {
     public class Startup
     {
@@ -43,7 +43,7 @@ namespace SimpleGraphQLApp
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGet("/playground", async context =>
+                endpoints.MapGet("/", async context =>
                 {
                     await context.Response.WriteAsync("Hello World!");
                 });
