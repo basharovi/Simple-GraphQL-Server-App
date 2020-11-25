@@ -1,13 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SimpleGraphQLApp.Models;
+using simple_graphql_app.Models;
 
-namespace SimpleGraphQLApp.Data
+namespace simple_graphql_app.Data
 {
     public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
-        { 
+        {
         }
 
         public DbSet<Student> Students { get; set; }

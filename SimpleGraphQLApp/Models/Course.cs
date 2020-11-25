@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SimpleGraphQLApp.Models
+namespace simple_graphql_app.Models
 {
     public class Course
     {
