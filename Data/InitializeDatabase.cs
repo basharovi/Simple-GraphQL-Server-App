@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using SimpleGraphQLApp.Models;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
-using simple_graphql_app.Models;
 
-namespace simple_graphql_app.Data
+namespace SimpleGraphQLApp.Data
 {
     public static class InitializeDatabase
     {
@@ -31,8 +31,8 @@ namespace simple_graphql_app.Data
                 context.Enrollments.Add(new Enrollment
                 {
                     Course = course,
-                    Student = new Student
-                    {
+                    Student = new Student 
+                    { 
                         FirstName = "Sujit",
                         LastName = "Biswash"
                     }
@@ -40,9 +40,9 @@ namespace simple_graphql_app.Data
                 context.Enrollments.Add(new Enrollment
                 {
                     Course = course,
-                    Student = new Student
-                    {
-                        FirstName = "Akash",
+                    Student = new Student 
+                    { 
+                        FirstName = "Akash", 
                         LastName = "Abir"
                     }
                 });
